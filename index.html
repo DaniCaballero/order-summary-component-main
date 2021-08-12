@@ -13,25 +13,34 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
+
 <body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
+<main class="outer-container">
+  <div class="card">
+    <img class="card-img" src="images/illustration-hero.svg" alt="Person dancing"/>
+    <h1>Order Summary</h1>
+    <p class="gray">You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!</p>
+    <div class="card-plan-info">
+      <img class="music-icon" src="images/icon-music.svg"/>
+      <ul class="plan-list">
+        <li><strong>Annual Plan</strong></li>
+        <li class="gray">$59.99/year</li>
+      </ul>
+      <a href="#" class="card-plan-btn">Change</a>
+    </div>
+    <button class="payment-btn" name="payment">Proceed to Payment</button>
+    <button class="cancel-btn" name="cancel">Cancel Order</button>
+  </div>
+</main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Daniela Caballero</a>.
   </div>
 </body>
 </html>

@@ -1,0 +1,121 @@
+body {
+    background: hsl(225, 100%, 94%) url('images/pattern-background-mobile.svg') no-repeat;
+    background-size: contain;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.outer-container {
+    padding: 50px 20px;
+}
+
+.card {
+    background-color: white;
+    max-width: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card h1 {
+    font-size: 23px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.card p {
+    width: 85%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.gray {
+    color: rgb(122, 122, 122);
+}
+
+.card-plan-info {
+    box-sizing: border-box;
+    background-color: hsl(225, 100%, 98%);
+    margin: 25px auto;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    width: 85%;
+    border-radius: 10px;
+    font-size: 14px;
+
+}
+
+.card-plan-btn {
+    margin-left: auto;
+    color: hsl(245, 75%, 52%);
+}
+
+.card-plan-btn:hover {
+    text-decoration: none;
+    filter: brightness(130%);
+}
+
+.plan-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+button {
+    display: block;
+    margin: 25px auto;
+    width: 85%;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 14px;
+}
+
+.payment-btn {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 15px 0;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: 700;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+
+.payment-btn:hover {
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: transparent;
+    border-style: none;
+    font-weight: 700;
+    color: gray;
+
+}
+
+.cancel-btn:hover {
+    color: black;
+    cursor: pointer;
+}
+
+li:not(:last-child) { 
+    margin-bottom: 5px;  
+}
+
+@media (min-width: 950px) {
+
+    body {
+        background: hsl(225, 100%, 94%) url('images/pattern-background-desktop.svg') no-repeat;
+    }
+
+    .card p, .card-plan-info, button {
+        width: 80%;
+    }
+
+}
